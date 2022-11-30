@@ -14,7 +14,9 @@ header{
 	background-color: #01357B;
 }
 
-header > h1{
+/* styling till h1(header), h4(footer) */
+header > h1,
+footer > .box-botten > h4{
 	font-family: alike;
 	color: #EAEAEA;
 	display: flex;
@@ -24,6 +26,7 @@ header > h1{
 	letter-spacing: 0.15em;
 }
 
+/* section med herobil och text */
 .top{
 	position: relative;
 	font-size: 0;
@@ -48,6 +51,7 @@ header > h1{
 	margin-right: auto;
 }
 
+/* datum plus länk under herobilden */
 main > nav{
 	display:flex;
 	flex-direction: row;
@@ -56,6 +60,7 @@ main > nav{
 	padding: 0.5em 1em;
 }
 
+/* info om konferensen */
 .information > *{
 	display: flex;
 	justify-content: center;
@@ -63,6 +68,7 @@ main > nav{
 	font-family: Gill Sans MT;
 }
 
+/* cards, tider om semenarium */
 .semenarium{
 	margin:1em;
 	margin-left:1em;
@@ -78,6 +84,7 @@ main > nav{
 	margin-top:2em;
 }
 
+/* datum */
 .semenarium > .box-innehall > p:first-child{
 	font-family: Gill Sans MT;
 	color: #D6D6D6;
@@ -85,41 +92,115 @@ main > nav{
 	padding:0.5em;
 }
 
+/* dag 1, dag 2 */
 article.dag{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(7, 1fr);
+}
+
+/* dag 3 */
+article.dag-tre{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(9, 1fr);
+}
+
+
+article.dag > *, 
+article.dag-tre > *{
 	padding-left:0.5em;
-	padding-right:0.5em;
+	padding-right: 0.5em;
 }
 
-article.dag > p:nth-of-type(3n +4){
+/* border under föreläsare */
+article.dag > p:nth-of-type(3n +4),
+article.dag-tre > p:nth-of-type(3n +4){
 	border-bottom: 1px solid #EAEAEA;
-	
+	margin-bottom: 0.5em;	
 }
 
-article.dag > p:nth-of-type(3n +3){
+/* styling för tider */
+article.dag > p:nth-of-type(3n +3),
+article.dag-tre > p:nth-of-type(3n +3){
 	text-align: right;
 	padding-right: 0.5em;
 }
 
-article.dag > p:first-child{
+/* style för rubriken dag */
+article.dag > p:first-child,
+article.dag-tre > p:first-child{
 	grid-column: 1 / span 2;
 	font-size:1.3em;
+	padding-bottom: 1em;
 }
 
-article.dag > p:nth-child(4){
+/* namn på första föreläsare */
+article.dag > p:nth-child(4),
+article.dag-tre > p:nth-child(4){
 	grid-column: 1 / span 2;
 	grid-row: 3;
-
 }
 
-article.dag > p:nth-child(7){
+/* namn på andra föreläsare */
+article.dag > p:nth-child(7),
+article.dag-tre > p:nth-child(7){
 	grid-column: 1 / span 2;
 	grid-row: 5;
 }
 
-article.dag > p:nth-child(10){
+/* namn på tredje föreläsare */
+article.dag > p:nth-child(10),
+article.dag-tre > p:nth-child(10){
 	grid-column: 1 / span 2;
 	grid-row: 7;
+}
+
+/* namn på fjärde föreläsaren dag 3 */
+article.dag-tre > p:nth-child(13){
+	grid-column: 1 / span 2;
+	grid-row:9;
+}
+
+/* läs mera länken i cards */
+article.dag > a,
+article.dag-tre > a{
+	grid-column: 1 / span 2;
+	text-align: center;
+	padding: 0.5em 0em;
+	font-size: 1.5em;
+}
+
+/* länk till top och anmälan ovan footer */
+.meny-botten{
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+	height: 4em;
+	margin-top:2em;
+}
+
+/* styling länk top och anmälan */
+.meny-botten > a{
+	display: flex;
+	align-items: center;
+	background-color: #030524;
+	font-size: 1.5em;
+}
+
+/* boxen i footer */
+footer > .box-botten > *{
+	background-color: #030524;
+	width: 100%;
+	height:20vh;
+}
+
+/* listan i footer */
+footer > .box-botten > ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left:1em;
+	line-height: 1.8em;
+	padding-top:0.5em;
 }
