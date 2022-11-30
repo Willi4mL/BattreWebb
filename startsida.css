@@ -15,14 +15,13 @@ header{
 }
 
 /* styling till h1(header), h4(footer) */
-header > h1,
-footer > .box-botten > h4{
+header > h1{
 	font-family: alike;
 	color: #EAEAEA;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 7vw;
+	font-size: 5vw;
 	letter-spacing: 0.15em;
 }
 
@@ -40,15 +39,17 @@ footer > .box-botten > h4{
 	font-family: alike;
 	color:#EAEAEA;
 	padding: 0.3em;
-	width: 53vw;
-	font-size: 5vw;
+	width: 40vw;
+	font-size: min(max(16px, 4vw), 4vw);
 }
 
  .hero-picture > img{
 	width:100%;
-	height:auto;
+	max-height: 80vh;
 	margin-left: auto;
 	margin-right: auto;
+	object-fit: cover;
+	object-position: 100% 10%;
 }
 
 /* datum plus länk under herobilden */
@@ -176,7 +177,7 @@ article.dag-tre > a{
 	border-top: 1px solid #EAEAEA;
 	border-bottom: 1px solid #EAEAEA;
 	height: 4em;
-	margin-top:2em;
+	margin-top:5em;
 }
 
 /* styling länk top och anmälan */
@@ -192,6 +193,16 @@ footer > .box-botten > *{
 	background-color: #030524;
 	width: 100%;
 	height:20vh;
+}
+
+footer > .box-botten > h4{
+	font-family: alike;
+	color: #EAEAEA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: clamp(2em, 5vw, 10em);
+	letter-spacing: 0.15em;
 }
 
 /* listan i footer */
