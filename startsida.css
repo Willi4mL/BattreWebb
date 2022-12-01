@@ -168,7 +168,8 @@ article.dag-tre > p:nth-child(13){
 article.dag > a,
 article.dag-tre > a{
 	grid-column: 1 / span 2;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	padding: 1em;
 	font-size: 1.5em;
 }
