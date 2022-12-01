@@ -74,11 +74,8 @@ main > nav{
 /* cards, tider om semenarium */
 .semenarium{
 	margin:1em;
-	margin-left:1em;
-	margin-right:1em;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 }
 
 .semenarium > *{
@@ -99,14 +96,14 @@ main > nav{
 article.dag{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(7, 1fr);
+	grid-template-rows: repeat(7, auto);
 }
 
 /* dag 3 */
 article.dag-tre{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(9, 1fr);
+	grid-template-rows: repeat(9, auto);
 }
 
 
@@ -114,6 +111,7 @@ article.dag > *,
 article.dag-tre > *{
 	padding-left:0.5em;
 	padding-right: 0.5em;
+	padding-top:0.5em;
 }
 
 /* border under föreläsare */
@@ -121,6 +119,7 @@ article.dag > p:nth-of-type(3n +4),
 article.dag-tre > p:nth-of-type(3n +4){
 	border-bottom: 1px solid #EAEAEA;
 	margin-bottom: 0.5em;	
+	padding-bottom: 0.5em;
 }
 
 /* styling för tider */
@@ -170,7 +169,7 @@ article.dag > a,
 article.dag-tre > a{
 	grid-column: 1 / span 2;
 	text-align: center;
-	padding: 0.5em 0em;
+	padding: 1em;
 	font-size: 1.5em;
 }
 
@@ -231,5 +230,11 @@ footer > .box-botten > ul{
 	.information > *{
 		margin-left:10em;
 		margin-right:10em;
+	}
+}
+
+@media (min-width:1009px){
+	.meny-botten > a:first-child{
+		visibility: hidden;
 	}
 }
