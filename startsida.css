@@ -5,6 +5,16 @@
 	color: #EAEAEA;
 }
 
+a{
+	text-decoration: none;
+}
+
+main a:hover,
+footer a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
 body{
 	background-color: #01357B;
 }
