@@ -59,13 +59,15 @@ main > nav{
 	justify-content: space-between;
 	background-color: #030524;
 	padding: 0.5em 1em;
+	position: sticky;
+	top:0;
 }
 
 /* info om konferensen */
 .information > *{
 	display: flex;
 	justify-content: center;
-	margin:1em;
+	margin:1.5em 1em;
 	font-family: Gill Sans MT;
 }
 
@@ -163,18 +165,6 @@ article.dag-tre > p:nth-child(13){
 	grid-row:9;
 }
 
-@media (min-width: 768px){
-	.semenarium{
-		display: flex;
-		justify-content: unset;
-		justify-content: space-between;
-	}
-	.semenarium > *{
-		max-width: 20em;
-		height:auto;
-	}
-}
-
 /* läs mera länken i cards */
 article.dag > a,
 article.dag-tre > a{
@@ -226,4 +216,20 @@ footer > .box-botten > ul{
 	padding-left:1em;
 	line-height: 1.8em;
 	padding-top:0.5em;
+}
+
+@media (min-width: 768px){
+	.semenarium{
+		display: flex;
+		justify-content: unset;
+		justify-content: space-between;
+	}
+	.semenarium > *{
+		max-width: 20em;
+		height:auto;
+	}
+	.information > *{
+		margin-left:10em;
+		margin-right:10em;
+	}
 }
