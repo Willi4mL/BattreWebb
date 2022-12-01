@@ -5,6 +5,17 @@
 	color: #EAEAEA;
 }
 
+
+a{
+	text-decoration: none;
+}
+
+main a:hover,
+footer a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
 body{
 	background-color: #01357B;
 }
@@ -23,10 +34,6 @@ header > h1{
 	align-items: center;
 	font-size: clamp(2em, 5vw, 10em);
 	letter-spacing: 0.15em;
-}
-
-h1 > a{
-	text-decoration: none;
 }
 
 /* datum plus länk under herobilden */
@@ -94,8 +101,23 @@ article.dag > p:last-child{
 	padding-bottom: 1em;
 }
 
+.osynlig-botten{
+	visibility: hidden;
+	border-bottom: 1px solid #EAEAEA;
+	height: 4em;
+	background-color: #030524;
+	display: flex;
+	justify-content: space-between;
+}
+
+.osynlig-botten > *{
+	display: flex;
+	align-items: center;
+	padding:1em;
+	font-size: clamp(1em, 5vw, 1.5em);
+}
+
 .dag-botten{
-	margin-top:5em;
 	border-top: 1px solid #EAEAEA;
 }
 /* länk till top,anmälan och läs mer ovan footer */
@@ -160,13 +182,18 @@ footer > .box-botten > ul{
 }
 
 @media (min-width:1009px){
-	.meny-botten > a:first-child{
-		visibility: hidden;
-	}
 	.semenarium > *{
 		width: 2em;
 		height:auto;
 		flex-grow: 1;
 		align-items: center;
+	}
+	.osynlig-botten{
+		visibility: visible;
+		margin-top:5em;
+		border-top:1px solid #EAEAEA;
+	}
+	.dag-botten, .meny-botten{
+		display: none;
 	}
 }
