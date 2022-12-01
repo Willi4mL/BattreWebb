@@ -1,0 +1,159 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	color: #EAEAEA;
+}
+
+body{
+	background-color: #01357B;
+}
+
+header{
+	height:auto;
+	background-color: #01357B;
+}
+
+/* styling till h1(header), h4(footer) */
+header > h1{
+	font-family: alike;
+	color: #EAEAEA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: clamp(2em, 5vw, 10em);
+	letter-spacing: 0.15em;
+}
+
+h1 > a{
+	text-decoration: none;
+}
+
+/* datum plus länk under herobilden */
+main > nav{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #030524;
+	padding: 0.5em 1em;
+	position: sticky;
+	top:0;
+}
+
+h2 {
+	display:flex;
+	justify-content: center;
+	margin-top:2em;
+	margin-bottom: 1.5em;
+}
+
+/* cards, tider om semenarium */
+.semenarium{
+	margin:1em;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.semenarium > *{
+	background-color: #030524;
+	width: 100%;
+	margin-top:2em;
+}
+
+/* dag 1 */
+article.dag{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	
+}
+
+article.dag > *{
+	padding-left:0.5em;
+	padding-right: 0.5em;
+	padding-top:0.5em;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+article.dag > p:nth-child(2){
+	text-align: right;
+	padding-right: 0.5em;
+}
+
+article.dag > p:nth-child(3){
+	grid-column: 1 / span 2;
+	grid-row: 2;
+}
+
+article.dag > p:last-child{
+	grid-column: 1 / span 2;
+	grid-row: 3;
+	padding-top:1em;
+	border-bottom: none;
+	padding-bottom: 1em;
+}
+
+/* länk till top och anmälan ovan footer */
+.meny-botten{
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+	height: 4em;
+	background-color: #030524;
+	margin-top:5em;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* styling länk top och anmälan */
+.meny-botten > a{
+	display: flex;
+	align-items: center;
+	padding:1em;
+	font-size: 1.5em;
+}
+
+/* boxen i footer */
+footer > .box-botten > *{
+	background-color: #030524;
+	width: 100%;
+	height:20vh;
+}
+
+footer > .box-botten > h4{
+	font-family: alike;
+	color: #EAEAEA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: clamp(2em, 5vw, 10em);
+	letter-spacing: 0.15em;
+}
+
+/* listan i footer */
+footer > .box-botten > ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left:1em;
+	line-height: 1.8em;
+	padding-top:0.5em;
+}
+
+@media (min-width: 768px){
+	.semenarium{
+		display: flex;
+		justify-content: unset;
+		justify-content: space-between;
+	}
+	.semenarium > *{
+		max-width: 20em;
+		height:auto;
+	}
+}
+
+@media (min-width:1009px){
+	.meny-botten > a:first-child{
+		visibility: hidden;
+	}
+}
