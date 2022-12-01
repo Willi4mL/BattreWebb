@@ -220,12 +220,14 @@ footer > .box-botten > ul{
 @media (min-width: 768px){
 	.semenarium{
 		display: flex;
-		justify-content: unset;
-		justify-content: space-between;
+		gap:1em;
+		justify-content: center;
 	}
 	.semenarium > *{
-		max-width: 20em;
+		width: 20em;
 		height:auto;
+		flex-grow: 1;
+		align-items: center;
 	}
 	.information > *{
 		margin-left:10em;
@@ -236,5 +238,11 @@ footer > .box-botten > ul{
 @media (min-width:1009px){
 	.meny-botten > a:first-child{
 		visibility: hidden;
+	}
+	.semenarium > *{
+		width: 2em;
+		height:auto;
+		flex-grow: 1;
+		align-items: center;
 	}
 }
