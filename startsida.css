@@ -21,7 +21,7 @@ header > h1{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 5vw;
+	font-size: clamp(2em, 5vw, 10em);
 	letter-spacing: 0.15em;
 }
 
@@ -161,6 +161,18 @@ article.dag-tre > p:nth-child(10){
 article.dag-tre > p:nth-child(13){
 	grid-column: 1 / span 2;
 	grid-row:9;
+}
+
+@media (min-width: 768px){
+	.semenarium{
+		display: flex;
+		justify-content: unset;
+		justify-content: space-between;
+	}
+	.semenarium > *{
+		max-width: 20em;
+		height:auto;
+	}
 }
 
 /* läs mera länken i cards */
