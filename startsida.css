@@ -5,6 +5,16 @@
 	color: #EAEAEA;
 }
 
+a{
+	text-decoration: none;
+}
+
+main a:hover,
+footer a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
 body{
 	background-color: #01357B;
 }
@@ -168,7 +178,8 @@ article.dag-tre > p:nth-child(13){
 article.dag > a,
 article.dag-tre > a{
 	grid-column: 1 / span 2;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	padding: 1em;
 	font-size: 1.5em;
 }
@@ -220,12 +231,14 @@ footer > .box-botten > ul{
 @media (min-width: 768px){
 	.semenarium{
 		display: flex;
-		justify-content: unset;
-		justify-content: space-between;
+		gap:1em;
+		justify-content: center;
 	}
 	.semenarium > *{
-		max-width: 20em;
+		width: 20em;
 		height:auto;
+		flex-grow: 1;
+		align-items: center;
 	}
 	.information > *{
 		margin-left:10em;
@@ -236,5 +249,11 @@ footer > .box-botten > ul{
 @media (min-width:1009px){
 	.meny-botten > a:first-child{
 		visibility: hidden;
+	}
+	.semenarium > *{
+		width: 2em;
+		height:auto;
+		flex-grow: 1;
+		align-items: center;
 	}
 }
