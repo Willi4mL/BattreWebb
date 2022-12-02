@@ -79,10 +79,11 @@ form > *{
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	margin-bottom:3em;
+	margin-top:1.5em;
 }
 
 .form-stil > *{
-	border:2px dotted black;
+	border-bottom:1px solid black;
 	padding:0.2em;
 }
 
@@ -94,15 +95,73 @@ form > *{
 	grid-column: 1 / span 2;
 }
 
-.mat > div:last-child{
-	grid-column: 1 / span 2;
+textarea{
+	min-width: 28%;
+	height:3em;
+	resize: none;
+}
+
+#skriv-allergi,
+.osynlig-text{
 	visibility: hidden;
 }
 
-input[type="checkbox"]:checked{
+input[type="checkbox"]:checked ~ #skriv-allergi,
+input[type="checkbox"]:checked ~.osynlig-text{
 	visibility: visible;
 }
 
-input[type="text"]{
-width:100%;
+.person input{
+	width:50%;
+}
+
+.person > *{
+	display: flex;
+	flex-direction: column;
+}
+
+/* boxen i footer */
+.meny-botten{
+	border-bottom: 1px solid #EAEAEA;
+	border-top: 1px solid #EAEAEA;
+	margin-top:5em;
+	height: 4em;
+	background-color: #030524;
+}
+
+/* styling länk top och anmälan */
+.meny-botten > a{
+	display: flex;
+	align-items: center;
+	padding:1em;
+	font-size: clamp(1em, 5vw, 1.5em);
+}
+footer *{
+	color:#EAEAEA;
+}
+footer > .box-botten > *{
+	background-color: #030524;
+	width: 100%;
+	height:20vh;
+}
+
+footer > .box-botten > h4{
+	font-family: alike;
+	color: #EAEAEA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: clamp(2em, 5vw, 10em);
+	letter-spacing: 0.15em;
+}
+
+/* listan i footer */
+footer > .box-botten > ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left:1em;
+	line-height: 1.8em;
+	padding-top:0.5em;
 }

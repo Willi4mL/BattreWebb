@@ -72,21 +72,61 @@
 				<p>119kr</p>
 
 				<div>
-					<input type="checkbox" name="checkbox-mat" id="mat-allergi" required/>
+					<input type="checkbox" name="checkbox-mat" id="mat-allergi"/>
 					<label for="mat-allergi">Allergi</label>
+					<br/>
+					<label class="osynlig-text" for="skriv-allergi">Fyll i fältet nedan med din allergi</label>
+					<br/>
+					<textarea id="skriv-allergi"></textarea>
 				</div>
-
-				<div>
-					<label for="val-allergi">Fyll i fältet nedan med din allergi</label>
-					<input type="text" id="mat-allergi"/>
-				</div>
-				
 			</div>
 			<hr/>
+
+			<!-- Personuppgifter -->
+			<div class="form-stil person">
+				<label>Personuppgifter</label>
+
+				<div>
+					<label for="fornamn">Förnamn &ast;</label>
+					<input type="name" name="input-person" id="fornamn"/>
+				</div>
+				<div>
+					<label for="efternamn">Efternamn &ast;</label>
+					<input type="name" name="input-person" id="efternamn"/>
+				</div>
+				<div>
+					<label for="adress-ett">Adress 1 &ast;</label>
+					<input type="adress" name="input-person" id="adress-ett"/>
+				</div>
+				<div>
+					<label for="adress-tva">Adress 2 &ast;</label>
+					<input type="adress" name="input-person" id="adress-tva"/>
+				</div>
+				<div>
+					<label for="e-post">E-post &ast;</label>
+					<input type="email" name="input-person" id="e-post"/>
+				</div>
+			</div>
+
 
 			<button type="submit">Skicka in</button>
 			<button type="reset">Rensa</button>
 		</form>
-	</main>
+		
+
+</main>
+<footer>
+	<nav class="meny-botten">
+		<a href="#top">Till topp</a>
+	</nav>
+	<div class="box-botten">
+		<h4>Bättre webb</h4>
+		<ul>
+			<li>Adress: <a href="https://www.google.com/maps/place/V%C3%A5xn%C3%A4sgatan+10,+653+40+Karlstad/@59.3828423,13.489686,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3cfcd12346f:0x7f9717c8ea4a4ca8!8m2!3d59.3828423!4d13.489686"> Våxnäsgatan 10, 653 40 Karlstad</a></li>
+			<li> Tel: <a href="Tel: 054-770 31 54"> 054-770 31 54</a></li>
+			<li>Email: <a href="mailto:someone@yoursite.com"> Info@BattreWebb.com</a></li>
+		</ul>
+	</div>
+</footer>
 </body>
 </html>
