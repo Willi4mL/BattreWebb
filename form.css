@@ -6,7 +6,7 @@
 }
 
 body{
-	background-color: #eaeaea;
+	background-color: #030524;
 }
 
 header{
@@ -14,7 +14,7 @@ header{
 	background-color: #01357B;
 }
 
-/* styling till h1(header), h4(footer) */
+/* styling till h1(header)*/
 header > h1{
 	font-family: alike;
 	color: #EAEAEA;
@@ -30,12 +30,79 @@ h1 > a{
 	color: #EAEAEA;
 }
 
-.form-info > h2 {
-	margin-bottom: 0.5em;
+main{
+	display:flex;
+	justify-content: center;
 }
 
-.form-info{
+form{
+	display: flex;
+	flex-grow: 1;
+	max-width: 50em;
+	height:auto;
+	justify-content: center;
+	border-radius: 0 0 0.5em 0.5em;
+	background-color: #EAEAEA;
+	padding:1em;
+	flex-direction: column;
+}
+
+form > *{
+	flex-direction: column;
+}
+
+.rubrik{
+	display:flex;
+	align-items: center;
+}
+
+.rubrik > h2{
+	margin:1em 0;
+	font-size: clamp(1em, 5vw, 1.5em);
+}
+
+.rubrik > p{
+	margin-bottom: 3em;
+}
+
+.rubrik > *{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	text-align: center;
-	margin-top:2em;
+}
+
+.form-stil > label:first-child{
+	font-weight: bold;
+}
+
+.form-stil, 
+.mat{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	margin-bottom:3em;
+}
+
+.form-stil > *{
+	border:2px dotted black;
+	padding:0.2em;
+}
+
+.form-stil > label:first-child{
+	grid-column: 1 / span 2;
+}
+
+.mat > div:nth-child(8){
+	grid-column: 1 / span 2;
+}
+
+.mat > div:last-child{
+	grid-column: 1 / span 2;
+	visibility: hidden;
+}
+
+input[type="checkbox"]:checked{
+	visibility: visible;
+}
+
+input[type="text"]{
+width:100%;
 }

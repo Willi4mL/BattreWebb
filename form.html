@@ -12,11 +12,81 @@
 		<h1><a href="startsida.html">Bättre Webb</a></h1>
 	</header>
 	<main>
-		<section class="form-info">
-			<h2>Vänligen fyll i din anmälan</h2>
-			<p>Alla fält med * är obligatoriska <br/>
-			och betalning sker på plats</p>
-		</section>
+		<form>
+			<section class="rubrik">
+				<h2>Vänligen fyll i din anmälan</h2>
+				<p>Alla fält med &ast; är obligatoriska <br/>
+				och betalning sker på plats</p>
+			</section>
+
+			<!-- Biljettyp radio -->
+			<div class="form-stil biljett">
+				<label>Biljettyp &ast;</label>
+
+				<div>
+					<input type="radio" name="radio-biljett" id="biljett-alla" required/>
+					<label for="biljett-alla">Alla dagar</label>
+				</div>
+				<p>699kr</p>
+
+				<div>
+					<input type="radio" name="radio-biljett" id="biljett-fre" required/>
+					<label for="biljett-fre">Fre 9/12</label>
+				</div>
+				<p>249kr</p>
+
+				<div>
+					<input type="radio" name="radio-biljett" id="biljett-lor" required/>
+					<label for="biljett-lor">Lör 10/12</label>
+				</div>
+				<p>249kr</p>
+
+				<div>
+					<input type="radio" name="radio-biljett" id="biljett-son" required/>
+					<label for="biljett-son">Sön 11/12</label>
+				</div>
+				<p>249kr</p>
+			</div>
+			<hr/>
+
+			<!-- Matval -->
+			<div class="form-stil mat">
+				<label>Mat &lpar;valfritt&rpar;</label>
+
+				<div>
+					<input type="radio" name="radio-mat" id="mat-kott" required/>
+					<label for="mat-kott">Kött</label>
+				</div>
+				<p>119kr</p>
+
+				<div>
+					<input type="radio" name="radio-mat" id="mat-fisk" required/>
+					<label for="mat-fisk">Fisk</label>
+				</div>
+				<p>129kr</p>
+
+				<div>
+					<input type="radio" name="radio-mat" id="mat-veg" required/>
+					<label for="mat-veg">Vegetariskt</label>
+				</div>
+				<p>119kr</p>
+
+				<div>
+					<input type="checkbox" name="checkbox-mat" id="mat-allergi" required/>
+					<label for="mat-allergi">Allergi</label>
+				</div>
+
+				<div>
+					<label for="val-allergi">Fyll i fältet nedan med din allergi</label>
+					<input type="text" id="mat-allergi"/>
+				</div>
+				
+			</div>
+			<hr/>
+
+			<button type="submit">Skicka in</button>
+			<button type="reset">Rensa</button>
+		</form>
 	</main>
 </body>
 </html>
