@@ -54,20 +54,26 @@
 				<label>Mat &lpar;valfritt&rpar;</label>
 
 				<div>
-					<input type="radio" name="radio-mat" id="mat-kott" required/>
+					<input type="radio" name="radio-mat" id="mat-kott"/>
 					<label for="mat-kott">Kött</label>
+					<br/>
+					<label class="mat-info" for="mat-kott">Köttfärsbiff i ugn med couscous</label>
 				</div>
 				<p>119kr</p>
 
 				<div>
-					<input type="radio" name="radio-mat" id="mat-fisk" required/>
+					<input type="radio" name="radio-mat" id="mat-fisk"/>
 					<label for="mat-fisk">Fisk</label>
+					<br/>
+					<label class="mat-info" for="mat-fisk">Lax med dillslungad potatis</label>
 				</div>
 				<p>129kr</p>
 
 				<div>
-					<input type="radio" name="radio-mat" id="mat-veg" required/>
+					<input type="radio" name="radio-mat" id="mat-veg"/>
 					<label for="mat-veg">Vegetariskt</label>
+					<br/>
+					<label class="mat-info" for="mat-veg">Purjolökspaj med tofu</label>
 				</div>
 				<p>119kr</p>
 
@@ -88,19 +94,19 @@
 
 				<div>
 					<label for="fornamn">Förnamn &ast;</label>
-					<input type="name" name="input-person" id="fornamn" required/>
+					<input type="name" name="input-person" id="fornamn" pattern="([a-ö])([A-Ö])"required/>
 				</div>
 				<div>
 					<label for="efternamn">Efternamn &ast;</label>
-					<input type="name" name="input-person" id="efternamn" required/>
+					<input type="name" name="input-person" id="efternamn" pattern="([a-ö])([A-Ö])" required/>
 				</div>
 				<div>
 					<label for="adress-ett">Adress 1 &ast;</label>
-					<input type="adress" name="input-person" id="adress-ett" required/>
+					<input type="adress" name="input-person" id="adress-ett"  pattern="[A-Öa-ö0-9 A-Öa-ö 0-9]+" required/>
 				</div>
 				<div>
-					<label for="adress-tva">Adress 2 &ast;</label>
-					<input type="adress" name="input-person" id="adress-tva" required/>
+					<label for="adress-tva">Adress 2</label>
+					<input type="adress" name="input-person" id="adress-tva"/>
 				</div>
 				<div>
 					<label for="e-post">E-post &ast;</label>
