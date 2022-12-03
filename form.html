@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bättre webb</title>
 	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="var.css">
 </head>
 <body>
 	<header>
@@ -18,6 +19,7 @@
 				<p>Alla fält med &ast; är obligatoriska <br/>
 				och betalning sker på plats</p>
 			</section>
+			<hr/>
 
 			<!-- Biljettyp radio -->
 			<div class="form-stil biljett">
@@ -94,19 +96,19 @@
 
 				<div>
 					<label for="fornamn">Förnamn &ast;</label>
-					<input type="name" name="input-person" id="fornamn" pattern="([a-ö])([A-Ö])"required/>
+					<input type="text" name="input-person" id="fornamn" pattern="[A-Öa-ö]+"required/>
 				</div>
 				<div>
 					<label for="efternamn">Efternamn &ast;</label>
-					<input type="name" name="input-person" id="efternamn" pattern="([a-ö])([A-Ö])" required/>
+					<input type="text" name="input-person" id="efternamn" pattern="[A-Öa-ö]+" required/>
 				</div>
 				<div>
 					<label for="adress-ett">Adress 1 &ast;</label>
-					<input type="adress" name="input-person" id="adress-ett"  pattern="[A-Öa-ö0-9 A-Öa-ö 0-9]+" required/>
+					<input type="text" name="input-person" id="adress-ett"  pattern="[A-Öa-ö0-9 A-Öa-ö 0-9]+" required/>
 				</div>
 				<div>
 					<label for="adress-tva">Adress 2</label>
-					<input type="adress" name="input-person" id="adress-tva"/>
+					<input type="text" name="input-person" id="adress-tva"/>
 				</div>
 				<div>
 					<label for="e-post">E-post &ast;</label>

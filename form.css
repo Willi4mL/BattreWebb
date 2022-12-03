@@ -6,7 +6,7 @@
 }
 
 body{
-	background-color: #030524;
+	background-image: var(--linear-farg);
 }
 
 header{
@@ -41,33 +41,17 @@ form{
 	max-width: 50em;
 	height:auto;
 	justify-content: center;
-	border-radius: 0.5em;
+	border-radius: 0.2em;
 	background-color: #EAEAEA;
 	margin-top:2em;
 	padding:1em;
 	flex-direction: column;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	box-shadow: 0 15px 25px 10px #0e2a5a8c;
 }
 
 form > *{
 	flex-direction: column;
-}
-
-.rubrik{
-	display:flex;
-	align-items: center;
-}
-
-.rubrik > h2{
-	margin:1em 0;
-	font-size: clamp(1em, 5vw, 1.5em);
-}
-
-.rubrik > p{
-	margin-bottom: 3em;
-}
-
-form{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .form-stil > label:first-child{
@@ -83,8 +67,22 @@ form{
 }
 
 .form-stil > *{
-	border-bottom:1px solid black;
+	border-bottom:1px solid #000000;
 	padding:0.2em;
+}
+
+.rubrik{
+	display:flex;
+	align-items: center;
+}
+
+.rubrik > h2{
+	margin:1em 0;
+	font-size: clamp(1em, 5vw, 1.5em);
+}
+
+.rubrik > p{
+	margin-bottom: 3em;
 }
 
 .biljett > p, 
@@ -174,14 +172,14 @@ button:hover{
 	transition-timing-function: ease-out;
 	transform: scale(1.01);
 	background-color: #01357B;
-	box-shadow: 0px 1px 3px 1px #1d1c1c;
+	box-shadow: var(--skugga-effekt)
 }
 
 button:focus{
 	transition-timing-function: ease-out;
 	transform: scale(1.01);
 	background-color: #01357B;
-	box-shadow: 0px 1px 3px 1px #1d1c1c;
+	box-shadow: var(--skugga-effekt)
 }
 
 /* boxen i footer */
@@ -190,6 +188,7 @@ button:focus{
 	border-top: 1px solid #EAEAEA;
 	margin-top:5em;
 	height: 4em;
+	display: flex;
 	background-color: #030524;
 }
 
