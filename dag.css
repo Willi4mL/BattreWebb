@@ -62,9 +62,10 @@ h2 {
 }
 
 .semenarium > *{
-	background-color: #030524;
+	background-image: linear-gradient(#030524, #5648D4);
 	width: 100%;
 	margin-top:2em;
+	box-shadow: 0px 1px 3px 1px #1d1c1c;
 }
 
 /* dag 1 */
