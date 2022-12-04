@@ -57,6 +57,11 @@ article.dag > ul{
 	padding-left:1.5em;
 	border-bottom: none;
 	padding-bottom: 1em;
+	
+}
+
+article.dag > ul li{
+	margin-bottom: 0.2em;
 }
 
 /* Länkbaren och till topp ovanför footer */
