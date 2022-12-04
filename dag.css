@@ -1,52 +1,8 @@
 *{
-	box-sizing: border-box;
-	margin:0;
-	padding:0;
 	color: #EAEAEA;
 }
 
-
-a{
-	text-decoration: none;
-}
-
-main a:hover,
-footer a:hover{
-	color: #ffffff;
-	text-decoration: underline;
-}
-
-body{
-	background-color: #01357B;
-}
-
-header{
-	height:auto;
-	background-color: #01357B;
-}
-
-/* styling till h1(header), h4(footer) */
-header > h1{
-	font-family: alike;
-	color: #EAEAEA;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: clamp(2em, 5vw, 10em);
-	letter-spacing: 0.15em;
-}
-
-/* datum plus länk under herobilden */
-main > nav{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-	background-color: #030524;
-	padding: 0.5em 1em;
-	position: sticky;
-	top:0;
-}
-
+/* Välkommen till dag */
 h2 {
 	display:flex;
 	justify-content: center;
@@ -68,7 +24,7 @@ h2 {
 	box-shadow: var(--skugga-effekt);
 }
 
-/* dag 1 */
+/* dag cards */
 article.dag{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -102,6 +58,7 @@ article.dag > p:last-child{
 	padding-bottom: 1em;
 }
 
+/* Länkbaren och till topp ovanför footer */
 .osynlig-botten{
 	visibility: hidden;
 	border-bottom: 1px solid #EAEAEA;
@@ -140,60 +97,13 @@ article.dag > p:last-child{
 	font-size: clamp(1em, 5vw, 1.5em);
 }
 
-/* boxen i footer */
-footer > .box-botten > *{
-	background-color: #030524;
-	width: 100%;
-	height:20vh;
-}
-
-footer > .box-botten > h4{
-	font-family: alike;
-	color: #EAEAEA;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: clamp(2em, 5vw, 10em);
-	letter-spacing: 0.15em;
-}
-
-/* listan i footer */
-footer > .box-botten > ul{
-	list-style-type: none;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding-left:1em;
-	line-height: 1.8em;
-	padding-top:0.5em;
-}
-
-@media (min-width: 768px){
-	.semenarium{
-		display: flex;
-		gap:1em;
-		justify-content: center;
-	}
-	.semenarium > *{
-		width: 20em;
-		height:auto;
-		flex-grow: 1;
-		align-items: center;
-	}
-}
-
 @media (min-width:1009px){
-	.semenarium > *{
-		width: 2em;
-		height:auto;
-		flex-grow: 1;
-		align-items: center;
-	}
 	.osynlig-botten{
 		visibility: visible;
 		margin-top:5em;
 		border-top:1px solid #EAEAEA;
 	}
+	/* Länkbaren och till topp */
 	.dag-botten, .meny-botten{
 		display: none;
 	}
