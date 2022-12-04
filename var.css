@@ -35,7 +35,7 @@ a{
 }
 
 main a:hover,
-footer a:hover{
+.kontakt:hover{
 	color: #ffffff;
 	text-decoration: underline;
 }
@@ -70,7 +70,7 @@ footer > .box-botten > h4{
 }
 
 footer > .box-botten > h4:hover{
-	cursor: default;
+	text-decoration: none;
 }
 
 /* listan i footer */
