@@ -103,9 +103,6 @@ footer > .box-botten > ul{
 }
 
 @media (min-width:1009px){
-	.meny-botten > a:first-child{
-		visibility: hidden;
-	}
 	.semenarium > *{
 		width: 2em;
 		height:auto;
