@@ -4,7 +4,6 @@
 	padding:0;
 }
 
-
 :root{
 	--linear-farg: linear-gradient(#030524, #161664, #5648D4);
 
@@ -16,7 +15,7 @@ header{
 	background-color: #01357B;
 }
 
-/* styling till h1(header), h4(footer) */
+/* styling till h1(header)*/
 header > h1{
 	font-family: alike;
 	color: #EAEAEA;
@@ -68,6 +67,10 @@ footer > .box-botten > h4{
 	align-items: center;
 	font-size: clamp(2em, 5vw, 10em);
 	letter-spacing: 0.15em;
+}
+
+footer > .box-botten > h4:hover{
+	cursor: default;
 }
 
 /* listan i footer */
