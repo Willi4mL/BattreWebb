@@ -7,6 +7,8 @@
 :root{
 	--linear-farg: linear-gradient(#030524, #161664, #5648D4);
 
+	--linear-bakgrund: linear-gradient(#030524, #5648D4);
+
 	--skugga-effekt: 0px 2px 5px 0.5px #0e2a5a8c;
 }
 
@@ -27,7 +29,7 @@ header > h1{
 }
 
 body{
-	background-color: #01357B;
+	background-image: var(--linear-bakgrund);
 }
 
 h1 > a,
