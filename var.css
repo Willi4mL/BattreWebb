@@ -5,16 +5,16 @@
 }
 
 :root{
-	--linear-farg: linear-gradient(#030524, #161664, #5648D4);
+	--linear-farg: linear-gradient(to bottom right, #020317, #0f0f42, #030524);
 
-	--linear-bakgrund: linear-gradient(#030524, #5648D4);
+	--linear-bakgrund: linear-gradient(#0b1162, #265fa8, #364ba9, #020645);
 
 	--skugga-effekt: 0px 2px 5px 0.5px #0e2a5a8c;
 }
 
 header{
 	height:auto;
-	background-color: #01357B;
+	background-color: #030524;
 }
 
 /* styling till h1(header)*/
@@ -48,7 +48,8 @@ main a:hover,
 }
 
 /* datum plus länk under herobilden */
-main > nav{
+main > nav,
+main > .bakgrund > nav{
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;

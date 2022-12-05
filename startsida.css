@@ -2,6 +2,10 @@
 	color: #EAEAEA;
 }
 
+body > main > .bakgrund{
+	background-image: var(--linear-bakgrund);
+}
+
 header > h1:hover,
 footer > .box-botten > h4{
 	cursor: default;
@@ -17,7 +21,7 @@ footer > .box-botten > h4{
 	position:absolute;
 	bottom: 0;
 	left:0;
-	background-color: #01357B;
+	background-image: var(--linear-farg);
 	font-family: alike;
 	color:#EAEAEA;
 	padding: 0.3em;
@@ -152,6 +156,7 @@ article.dag-tre > a{
 	border-bottom: 1px solid #EAEAEA;
 	height: 4em;
 	margin-top:5em;
+	background-color: #030524;
 }
 
 /* styling länk top och anmälan */
