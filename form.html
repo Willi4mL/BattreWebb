@@ -24,61 +24,62 @@
 
 			<!-- Biljettyp radio -->
 			<div class="form-stil biljett">
-				<label>Biljettyp &ast;</label>
+				<p>Biljettyp &ast;</p>
 
-				<div>
+				<label for="biljett-alla">
 					<input type="radio" name="radio-biljett" id="biljett-alla" required/>
 					<label for="biljett-alla">Alla dagar</label>
-				</div>
-				<p>699kr</p>
+				</label>
+				<label class="kostnad" for="biljett-alla">699kr</label>
 
-				<div>
+				<label for="biljett-fre">
 					<input type="radio" name="radio-biljett" id="biljett-fre" required/>
 					<label for="biljett-fre">Fre 9/12</label>
-				</div>
-				<p>249kr</p>
+				</label>
+				<label class="kostnad" for="biljett-fre">249kr</label>
 
-				<div>
+
+				<label for="biljett-lor">
 					<input type="radio" name="radio-biljett" id="biljett-lor" required/>
 					<label for="biljett-lor">Lör 10/12</label>
-				</div>
-				<p>249kr</p>
+				</label>
+				<label class="kostnad" for="biljett-lor">249kr</label>
 
-				<div>
+				<label for="biljett-son">
 					<input type="radio" name="radio-biljett" id="biljett-son" required/>
 					<label for="biljett-son">Sön 11/12</label>
-				</div>
-				<p>249kr</p>
+				</label>
+				<label class="kostnad" for="biljett-son">249kr</label>
 			</div>
 			<hr/>
 
 			<!-- Matval -->
 			<div class="form-stil mat">
-				<label>Mat &lpar;valfritt&rpar;</label>
+				<p>Mat &lpar;valfritt&rpar;</p>
 
-				<div>
+				<label for="mat-kott">
 					<input type="radio" name="radio-mat" id="mat-kott"/>
 					<label for="mat-kott">Kött</label>
 					<br/>
 					<label class="mat-info" for="mat-kott">Köttfärsbiff i ugn med couscous</label>
-				</div>
-				<p>119kr</p>
+				</label>
+				<label class="kostnad" for="mat-kott">119kr</label>
 
-				<div>
+				<label for="mat-fisk">
 					<input type="radio" name="radio-mat" id="mat-fisk"/>
 					<label for="mat-fisk">Fisk</label>
 					<br/>
 					<label class="mat-info" for="mat-fisk">Lax med dillslungad potatis</label>
-				</div>
-				<p>129kr</p>
+				</label>
+				<label class="kostnad" for="mat-fisk">129kr</label>
 
-				<div>
+				<label for="mat-veg">
 					<input type="radio" name="radio-mat" id="mat-veg"/>
 					<label for="mat-veg">Vegetariskt</label>
 					<br/>
 					<label class="mat-info" for="mat-veg">Purjolökspaj med tofu</label>
-				</div>
-				<p>119kr</p>
+				</label>
+				<label class="kostnad" for="mat-veg">119kr</label>
 
 				<div>
 					<input type="checkbox" name="checkbox-mat" id="mat-allergi"/>
@@ -97,15 +98,15 @@
 
 				<div>
 					<label for="fornamn">Förnamn &ast;</label>
-					<input type="text" name="input-person" id="fornamn" pattern="[A-Öa-ö]+"required/>
+					<input type="text" name="input-person--krav" id="fornamn" pattern="[A-Öa-ö]+"required/>
 				</div>
 				<div>
 					<label for="efternamn">Efternamn &ast;</label>
-					<input type="text" name="input-person" id="efternamn" pattern="[A-Öa-ö]+" required/>
+					<input type="text" name="input-person--krav" id="efternamn" pattern="[A-Öa-ö]+" required/>
 				</div>
 				<div>
 					<label for="adress-ett">Adress 1 &ast;</label>
-					<input type="text" name="input-person" id="adress-ett"  pattern="[A-Öa-ö0-9 A-Öa-ö 0-9]+" required/>
+					<input type="text" name="input-person--krav" id="adress-ett"  pattern="[A-Öa-ö0-9 A-Öa-ö 0-9]+" required/>
 				</div>
 				<div>
 					<label for="adress-tva">Adress 2</label>
@@ -113,7 +114,7 @@
 				</div>
 				<div>
 					<label for="e-post">E-post &ast;</label>
-					<input type="email" name="input-person" id="e-post" required/>
+					<input type="email" name="input-person--krav" id="e-post" required/>
 				</div>
 			</div>
 
