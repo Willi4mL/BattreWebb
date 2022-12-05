@@ -30,8 +30,13 @@ body{
 	background-color: #01357B;
 }
 
-a{
+h1 > a,
+h4 > a{
 	text-decoration: none;
+}
+
+a{
+	text-decoration: underline;
 }
 
 main a:hover,
@@ -108,5 +113,8 @@ footer > .box-botten > ul{
 		height:auto;
 		flex-grow: 1;
 		align-items: center;
+	}
+	a{
+		text-decoration: none;
 	}
 }
