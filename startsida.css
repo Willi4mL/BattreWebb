@@ -38,38 +38,6 @@ footer > .box-botten > h4{
 	object-position: 100% 10%;
 }
 
-/* Knapp i nav till anmälan */
-.till-anmalan--knapp{
-	background-color: #3030a1;
-	border-radius: 0.2em;
-	padding:0.15em;
-	box-shadow: inset 0px 1px 4px 1px #d8d8d892;
-	transition: all 0.2s;
-	overflow: hidden;
-	position: relative;
-}
-
-.till-anmalan--knapp:hover{
-	text-decoration: none;
-	background-color: #008000;
-}
-
-.till-anmalan--knapp:before {
-	content: "";
-	background-color: white;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 0.5em;
-	position: absolute;
-	transform: translateX(-100%) rotate(45deg);
-	transition: all 0.3s;   
-  }
-  
-  .till-anmalan--knapp:hover:before { 
-	transform: translateX(100%) rotate(45deg);
-  }
-
 /* info om konferensen */
 .information > *{
 	display: flex;
