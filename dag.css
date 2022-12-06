@@ -4,28 +4,24 @@
 
 /* Välkommen till dag */
 h2 {
-	display:flex;
+	display: flex;
 	justify-content: center;
-	margin-top:2em;
+	margin-top: 2em;
 	margin-bottom: 1.5em;
 }
 
 /* cards, tider om semenarium */
 .semenarium{
-	margin:1em;
 	display: flex;
 	flex-wrap: wrap;
+	margin: 1em;
 }
 
 .semenarium > *{
 	background-image: var(--linear-farg);
 	width: 100%;
-	margin-top:2em;
+	margin-top: 2em;
 	box-shadow: var(--skugga-effekt);
-}
-
-.semenarium .osynlig{
-	visibility: hidden;
 }
 
 /* dag cards */
@@ -37,9 +33,9 @@ article.dag{
 }
 
 article.dag > *{
-	padding-left:0.5em;
+	padding-left: 0.5em;
 	padding-right: 0.5em;
-	padding-top:0.5em;
+	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	border-bottom: 1px solid #EAEAEA;
 }
@@ -57,8 +53,8 @@ article.dag > p:nth-child(3){
 article.dag > ul{
 	grid-column: 1 / span 2;
 	grid-row: 3;
-	padding-top:1em;
-	padding-left:1.5em;
+	padding-top: 1em;
+	padding-left: 1.5em;
 	border-bottom: none;
 	padding-bottom: 1em;
 	
@@ -70,18 +66,18 @@ article.dag > ul li{
 
 /* Länkbaren och till topp ovanför footer */
 .osynlig-botten{
+	display: flex;
+	justify-content: space-between;
 	visibility: hidden;
 	border-bottom: 1px solid #EAEAEA;
 	height: 4em;
 	background-color: #030524;
-	display: flex;
-	justify-content: space-between;
 }
 
 .osynlig-botten > *{
 	display: flex;
 	align-items: center;
-	padding:1em;
+	padding: 1em;
 	font-size: clamp(1em, 5vw, 1.5em);
 }
 
@@ -91,11 +87,11 @@ article.dag > ul li{
 /* länk till top,anmälan och läs mer ovan footer */
 .meny-botten, 
 .dag-botten{
+	display: flex;
+	justify-content: space-between;
 	border-bottom: 1px solid #EAEAEA;
 	height: 4em;
 	background-color: #030524;
-	display: flex;
-	justify-content: space-between;
 }
 
 /* styling länk top och anmälan */
@@ -103,20 +99,15 @@ article.dag > ul li{
 .dag-botten > *{
 	display: flex;
 	align-items: center;
-	padding:1em;
+	padding: 1em;
 	font-size: clamp(1em, 5vw, 1.5em);
 }
 
 @media (min-width:1009px){
-
-	.osynlig{
-		display: none;
-	}
-
 	.osynlig-botten{
 		visibility: visible;
-		margin-top:5em;
-		border-top:1px solid #EAEAEA;
+		margin-top: 5em;
+		border-top: 1px solid #EAEAEA;
 	}
 	/* Länkbaren och till topp */
 	.dag-botten, .meny-botten{
