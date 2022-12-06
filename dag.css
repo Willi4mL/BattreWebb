@@ -24,6 +24,10 @@ h2 {
 	box-shadow: var(--skugga-effekt);
 }
 
+.semenarium .osynlig{
+	visibility: hidden;
+}
+
 /* dag cards */
 article.dag{
 	display: grid;
@@ -104,6 +108,11 @@ article.dag > ul li{
 }
 
 @media (min-width:1009px){
+
+	.osynlig{
+		display: none;
+	}
+
 	.osynlig-botten{
 		visibility: visible;
 		margin-top:5em;
