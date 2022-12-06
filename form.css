@@ -53,12 +53,11 @@ form > *{
 .biljett, 
 .mat{
 	display:grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: minmax(10em, 25em);
 	grid-template-rows: auto;
 	margin-bottom:3em;
 	margin-top:1.5em;
-	max-width: 25em;
-	justify-self: center;
+	align-self:center;
 }
 
 .form-stil > *{
