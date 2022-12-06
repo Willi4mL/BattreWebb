@@ -22,7 +22,7 @@ footer > .box-botten > h4{
 	bottom: 0;
 	left:0;
 	background-image: var(--linear-farg);
-	font-family: alike;
+	font-family: var(--font-rubrik);
 	color:#EAEAEA;
 	padding: 0.3em;
 	width: 40vw;
@@ -43,7 +43,7 @@ footer > .box-botten > h4{
 	display: flex;
 	justify-content: center;
 	margin:1.5em 1em;
-	font-family: Gill Sans MT;
+	font-family: var(--font-text);
 }
 
 /* cards, tider om semenarium */
