@@ -41,6 +41,10 @@ a{
 	text-decoration: underline;
 }
 
+.till-anmalan--knapp{
+	text-decoration: none;
+}
+
 main a:hover,
 .kontakt:hover{
 	text-decoration: underline;
@@ -75,7 +79,7 @@ main > .bakgrund > nav{
 }
 
 .till-anmalan--knapp:before {
-	content: "";
+	content:"";
 	background-color: white;
 	top: 0;
 	left: 0;
