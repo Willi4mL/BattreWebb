@@ -87,7 +87,7 @@
 					<br/>
 					<label class="osynlig-text" for="skriv-allergi">Fyll i fältet nedan med din allergi</label>
 					<br/>
-					<textarea id="skriv-allergi"></textarea>
+					<textarea id="skriv-allergi" maxlength="40"></textarea>
 				</div>
 			</div>
 			<hr/>
@@ -98,11 +98,11 @@
 
 				<div>
 					<label for="fornamn">Förnamn &ast;</label>
-					<input type="text" name="input-person--krav" id="fornamn" pattern="[A-Öa-ö]+"required/>
+					<input type="text" name="input-person--krav" id="fornamn" pattern="[A-Öa-ö]+" minlength="2" required/>
 				</div>
 				<div>
 					<label for="efternamn">Efternamn &ast;</label>
-					<input type="text" name="input-person--krav" id="efternamn" pattern="[A-Öa-ö]+" required/>
+					<input type="text" name="input-person--krav" id="efternamn" pattern="[A-Öa-ö]+" minlength="2" required/>
 				</div>
 				<div>
 					<label for="adress-ett">Adress 1 &ast;</label>
@@ -114,7 +114,7 @@
 				</div>
 				<div>
 					<label for="e-post">E-post &ast;</label>
-					<input type="email" name="input-person--krav" id="e-post" required/>
+					<input type="email" name="input-person--krav" id="e-post" pattern="[A-Öa-ö0-9._%+-]+@[A-Öa-ö0-9.-]+\.[A-Öa-ö]{1,63}$" required/>
 				</div>
 			</div>
 
