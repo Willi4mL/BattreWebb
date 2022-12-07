@@ -15,41 +15,41 @@
 	</header>
 	<main>
 		<form>
-			<section class="rubrik">
+			<article class="rubrik">
 				<h2>Vänligen fyll i din anmälan</h2>
 				<p>Alla fält med &ast; är obligatoriska <br/>
 				och betalning sker på plats</p>
-			</section>
+			</article>
 			<hr/>
 
 			<!-- Biljettyp radio -->
 			<div class="form-stil biljett">
 				<p>Biljettyp &ast;</p>
 
-				<label for="biljett-alla">
-					<input type="radio" name="radio-biljett--krav" id="biljett-alla" required/>
-					<label for="biljett-alla">Alla dagar</label>
+				<label for="biljett__alla">
+					<input type="radio" name="radio-biljett--krav" id="biljett__alla" required/>
+					<label for="biljett__alla">Alla dagar</label>
 				</label>
-				<label class="kostnad" for="biljett-alla">699kr</label>
+				<label class="kostnad" for="biljett__alla">699kr</label>
 
-				<label for="biljett-fre">
-					<input type="radio" name="radio-biljett--krav" id="biljett-fre" required/>
-					<label for="biljett-fre">Fre 9/12</label>
+				<label for="biljett__fre">
+					<input type="radio" name="radio-biljett--krav" id="biljett__fre" required/>
+					<label for="biljett__fre">Fre 9/12</label>
 				</label>
-				<label class="kostnad" for="biljett-fre">249kr</label>
+				<label class="kostnad" for="biljett__fre">249kr</label>
 
 
-				<label for="biljett-lor">
-					<input type="radio" name="radio-biljett--krav" id="biljett-lor" required/>
-					<label for="biljett-lor">Lör 10/12</label>
+				<label for="biljett__lor">
+					<input type="radio" name="radio-biljett--krav" id="biljett__lor" required/>
+					<label for="biljett__lor">Lör 10/12</label>
 				</label>
-				<label class="kostnad" for="biljett-lor">249kr</label>
+				<label class="kostnad" for="biljett__lor">249kr</label>
 
-				<label for="biljett-son">
-					<input type="radio" name="radio-biljett--krav" id="biljett-son" required/>
-					<label for="biljett-son">Sön 11/12</label>
+				<label for="biljett__son">
+					<input type="radio" name="radio-biljett--krav" id="biljett__son" required/>
+					<label for="biljett__son">Sön 11/12</label>
 				</label>
-				<label class="kostnad" for="biljett-son">249kr</label>
+				<label class="kostnad" for="biljett__son">249kr</label>
 			</div>
 			<hr/>
 
@@ -57,37 +57,37 @@
 			<div class="form-stil mat">
 				<p>Mat &lpar;valfritt&rpar;</p>
 
-				<label for="mat-kott">
-					<input type="radio" name="radio-mat" id="mat-kott"/>
-					<label for="mat-kott">Kött</label>
+				<label for="mat__kott">
+					<input type="radio" name="radio-mat" id="mat__kott"/>
+					<label for="mat__kott">Kött</label>
 					<br/>
-					<label class="mat-info" for="mat-kott">Köttfärsbiff i ugn med couscous</label>
+					<label class="mat-info" for="mat__kott">Köttfärsbiff i ugn med couscous</label>
 				</label>
-				<label class="kostnad" for="mat-kott">119kr</label>
+				<label class="kostnad" for="mat__kott">119kr</label>
 
-				<label for="mat-fisk">
-					<input type="radio" name="radio-mat" id="mat-fisk"/>
-					<label for="mat-fisk">Fisk</label>
+				<label for="mat__fisk">
+					<input type="radio" name="radio-mat" id="mat__fisk"/>
+					<label for="mat__fisk">Fisk</label>
 					<br/>
-					<label class="mat-info" for="mat-fisk">Lax med dillslungad potatis</label>
+					<label class="mat-info" for="mat__fisk">Lax med dillslungad potatis</label>
 				</label>
-				<label class="kostnad" for="mat-fisk">129kr</label>
+				<label class="kostnad" for="mat__fisk">129kr</label>
 
-				<label for="mat-veg">
-					<input type="radio" name="radio-mat" id="mat-veg"/>
-					<label for="mat-veg">Vegetariskt</label>
+				<label for="mat__veg">
+					<input type="radio" name="radio-mat" id="mat__veg"/>
+					<label for="mat__veg">Vegetariskt</label>
 					<br/>
-					<label class="mat-info" for="mat-veg">Purjolökspaj med tofu</label>
+					<label class="mat-info" for="mat__veg">Purjolökspaj med tofu</label>
 				</label>
-				<label class="kostnad" for="mat-veg">119kr</label>
+				<label class="kostnad" for="mat__veg">119kr</label>
 
 				<div>
-					<input type="checkbox" name="checkbox-mat" id="mat-allergi"/>
-					<label for="mat-allergi">Allergi</label>
+					<input type="checkbox" name="checkbox-mat" id="mat__allergi"/>
+					<label for="mat__allergi">Allergi</label>
 					<br/>
-					<label class="osynlig-text" for="skriv-allergi">Fyll i fältet nedan med din allergi</label>
+					<label class="mat__textarea--osynlig" for="mat__skriv-allergi">Fyll i fältet nedan med din allergi</label>
 					<br/>
-					<textarea id="skriv-allergi" maxlength="40"></textarea>
+					<textarea id="mat__skriv-allergi" maxlength="40"></textarea>
 				</div>
 			</div>
 			<hr/>
@@ -97,30 +97,30 @@
 				<label>Personuppgifter</label>
 
 				<div>
-					<label for="fornamn">Förnamn &ast;</label>
-					<input type="text" name="input-person--krav" id="fornamn" pattern="[A-Öa-ö]+" minlength="2" required/>
+					<label for="person__fornamn">Förnamn &ast;</label>
+					<input type="text" name="input-person--krav" id="person__fornamn" pattern="[A-Öa-ö]+" minlength="2" required/>
 				</div>
 				<div>
-					<label for="efternamn">Efternamn &ast;</label>
-					<input type="text" name="input-person--krav" id="efternamn" pattern="[A-Öa-ö]+" minlength="2" required/>
+					<label for="person__efternamn">Efternamn &ast;</label>
+					<input type="text" name="input-person--krav" id="person__efternamn" pattern="[A-Öa-ö]+" minlength="2" required/>
 				</div>
 				<div>
-					<label for="adress-ett">Adress 1 &ast;</label>
-					<input type="text" name="input-person--krav" id="adress-ett"  pattern="[A-Öa-ö0-9 A-Öa-ö 0-9]+" required/>
+					<label for="person__adress-ett">Adress 1 &ast;</label>
+					<input type="text" name="input-person--krav" id="person__adress-ett"  pattern="[A-Öa-ö0-9 A-Öa-ö 0-9]+" required/>
 				</div>
 				<div>
-					<label for="adress-tva">Adress 2</label>
-					<input type="text" name="input-person" id="adress-tva"/>
+					<label for="person__adress-tva">Adress 2</label>
+					<input type="text" name="input-person" id="person__adress-tva"/>
 				</div>
 				<div>
-					<label for="e-post">E-post &ast;</label>
-					<input type="email" name="input-person--krav" id="e-post" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1.63}$" required/>
+					<label for="person__e-post">E-post &ast;</label>
+					<input type="email" name="input-person--krav" id="person__e-post" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1.63}$" required/>
 				</div>
 			</div>
 
 			<div class="knapp-stil">
-				<button type="submit">Skicka in</button>
-				<button type="reset">Rensa</button>
+				<button class="knapp-stil--utseende" type="submit">Skicka in</button>
+				<button class="knapp-stil--utseende" type="reset">Rensa</button>
 			</div>
 		</form>
 		
@@ -128,14 +128,14 @@
 </main>
 <footer>
 	<nav class="meny-botten">
-		<a href="#top">Till topp</a>
+		<a class="meny-botten__top" href="#top">Till topp</a>
 	</nav>
 	<div class="box-botten">
 		<h4><a href="startsida.html">Bättre webb</a></h4>
 		<ul>
-			<li>Adress: <a class="kontakt" href="https://www.google.com/maps/place/V%C3%A5xn%C3%A4sgatan+10,+653+40+Karlstad/@59.3828423,13.489686,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3cfcd12346f:0x7f9717c8ea4a4ca8!8m2!3d59.3828423!4d13.489686"> Våxnäsgatan 10, 653 40 Karlstad</a></li>
-			<li> Tel: <a class="kontakt" href="Tel: 054-770 31 54"> 054-770 31 54</a></li>
-			<li>Email: <a class="kontakt" href="mailto:someone@yoursite.com"> Info@BattreWebb.com</a></li>
+			<li>Adress: <a class="box-botten__kontakt" href="https://www.google.com/maps/place/V%C3%A5xn%C3%A4sgatan+10,+653+40+Karlstad/@59.3828423,13.489686,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3cfcd12346f:0x7f9717c8ea4a4ca8!8m2!3d59.3828423!4d13.489686"> Våxnäsgatan 10, 653 40 Karlstad</a></li>
+			<li> Tel: <a class="box-botten__kontakt" href="Tel: 054-770 31 54"> 054-770 31 54</a></li>
+			<li>Email: <a class="box-botten__kontakt" href="mailto:someone@yoursite.com"> Info@BattreWebb.com</a></li>
 		</ul>
 	</div>
 </footer>

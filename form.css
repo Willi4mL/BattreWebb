@@ -88,14 +88,15 @@ form > *{
 .mat > label > .mat-info{
 	margin-left:1em;
 	font-style: italic;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: var(--font-text);
 	font-size: 0.8em;
 }
 
 .biljett label:hover, 
-.mat > label:hover,
+.mat  label:hover,
 .mat > label > .mat-info,
-.mat > div *:hover{
+.mat > div *:hover,
+input[type="radio"]{
 	cursor: pointer;
 }
 
@@ -116,23 +117,23 @@ form > *{
 }
 
 /* Textruta för allergi */
-textarea{
+#mat__skriv-allergi{
 	min-width: 28%;
 	height:3em;
 	resize: none;
 }
 
-.mat > div > textarea:hover{
+.mat > div > #mat__skriv-allergi:hover{
 	cursor:auto;
 }
 
-#skriv-allergi,
-.osynlig-text{
+#mat__skriv-allergi,
+.mat__textarea--osynlig{
 	visibility: hidden;
 }
 
-input[type="checkbox"]:checked ~ #skriv-allergi,
-input[type="checkbox"]:checked ~.osynlig-text{
+input[type="checkbox"]:checked ~ #mat__skriv-allergi,
+input[type="checkbox"]:checked ~.mat__textarea--osynlig{
 	visibility: visible;
 }
 
@@ -170,8 +171,7 @@ input[type="checkbox"]:checked ~.osynlig-text{
 	flex-direction: row;
 }
 
-button[type="submit"],
-button[type="reset"]{
+button.knapp-stil--utseende{
 	border-radius: 0.2em;
 	background-color: #030524;
 	color:#EAEAEA;
@@ -179,11 +179,9 @@ button[type="reset"]{
 	height:2em;
 	transition: all 0.2s;
 	border:none;
-	
-
 }
 
-button:hover{
+button.knapp-stil--utseende:hover{
 	cursor: pointer;
 	transition-timing-function: ease-out;
 	transform: scale(1.01);
@@ -191,7 +189,7 @@ button:hover{
 	box-shadow: var(--skugga-effekt)
 }
 
-button:focus{
+button.knapp-stil--utseende:focus{
 	transition-timing-function: ease-out;
 	transform: scale(1.01);
 	background-color: #01357B;
@@ -209,14 +207,14 @@ button:focus{
 }
 
 /* styling länk top och anmälan */
-.meny-botten > a{
+.meny-botten > .meny-botten__top{
 	display: flex;
 	align-items: center;
 	padding:1em;
 	font-size: clamp(1em, 5vw, 1.5em);
 }
 
-.meny-botten > a:hover{
+.meny-botten > .meny-botten__top:hover{
 	text-decoration: underline;
 }
 
