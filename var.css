@@ -52,7 +52,7 @@ main a:hover,
 
 /* datum plus länk under herobilden */
 main > nav,
-main > .bakgrund > nav{
+main > .bakgrund--gradiant > nav{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

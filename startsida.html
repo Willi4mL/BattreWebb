@@ -16,31 +16,31 @@
 	<main>
 		<!-- Herobild med textruta -->
 		<section class="top">
-			<picture class="hero-picture">
-				<img src="bilder/hero.png" alt="hero bild">
+			<picture class="top__hero-picture">
+				<img class="top__talare" src="bilder/hero.png" alt="hero bild">
 			</picture>
 			<h2>Konferens för 
 			<br/>
 				frontendutvecklare
 			</h2>
 		</section>
-		<section class="bakgrund">
+		<section class="bakgrund--gradiant">
 		<!-- Datum plus länk under herobilden -->
 		<nav>
 			<p>9-10-11 December 2022</p>
 			<a class="till-anmalan--knapp" href="form.html">Till anmälan</a>
 		</nav>
 		<!-- Kort info om konferensen -->
-		<section class="information">
+		<article class="information">
 			<h3>Välkommen till bättre webb</h3>
 			<p>En konferens som äger rum i Karlstad 9/12 till 11/12 riktar sig främst åt frontendutvecklare för att ge information om nya tekniker och regler som bör följas och även tid för att knyta nya kontakter.</p>
 			<p>Att få åka på konferens ska både vara en känsla av lyx och nytta. Ni ska känna er uppdaterade och redo för att återvända till kontoret och ta er an alla utmaningar. Skratt och god mat är självklart något som hör ihop med en bra konferens! Maten kan beställas i förväg men skattet får du stå för själv. Vi på bättre webb hoppas att få får möjlghet att träffa just dig.</p>
-		</section>
+		</article>
 		<hr/>
 		<!-- Cards, tider om semenarium dag 1 -->
 		<section class="semenarium">
-			<div class="box-innehall"><p>9 December</p>
-				<article class="dag">
+			<div class="semenarium__box-innehall"><p>9 December</p>
+				<article class="semenarium__dag">
 					<p>Dag 1</p>
 					<p>UX Design Process</p>
 					<p>09:00-11:00</p>
@@ -53,13 +53,13 @@
 					<p>Färgernas psykologi</p>
 					<p>14:45-16:00</p>
 					<p>Hedvig Engdahl</p>
-					<a class="semenarium-ett" href="dag1.html">Läs mer</a>
+					<a class="semenarium__dag-ett" href="dag1.html">Läs mer</a>
 				</article>
 			</div>
 
 			<!-- Cards, tider om semenarium dag 2 -->
-			<div class="box-innehall"><p>10 December</p>
-				<article class="dag">
+			<div class="semenarium__box-innehall"><p>10 December</p>
+				<article class="semenarium__dag">
 					<p>Dag 2</p>
 					<p>WCAG</p>
 					<p>09:00-11:00</p>
@@ -72,13 +72,13 @@
 					<p>BEM</p>
 					<p>14:45-16:00</p>
 					<p>Tor Lundell</p>
-					<a class="semenarium-tva" href="dag2.html">Läs mer</a>
+					<a class="semenarium__dag-tva" href="dag2.html">Läs mer</a>
 				</article>
 			</div>
 
 			<!-- Cards, tider om semenarium dag 3 -->
-			<div class="box-innehall"><p>11 December</p>
-				<article class="dag-tre">
+			<div class="semenarium__box-innehall"><p>11 December</p>
+				<article class="semenarium__dag-tre">
 					<p>Dag 3</p>
 					<p>Html och css</p>
 					<p>08:30-10:00</p>
@@ -95,20 +95,20 @@
 					<p>React</p>
 					<p>15:15-16:30</p>
 					<p>Frida Eriksson</p>
-					<a class="semenarium-tre" href="dag3.html">Läs mer</a>
+					<a class="semenarium__dag-tre" href="dag3.html">Läs mer</a>
 				</article>
 			</div>
 
 			<!-- Card osynlig -->
-			<div class="box-innehall osynlig"><p>11 December</p>
+			<div class="semenarium__box-innehall semenarium__box-innehall--osynlig">
 				<article class="dag-tre">
 				</article>
 			</div>
 		</section>
 		<!-- Länk till top och anmälan -->
 		<nav class="meny-botten">
-			<a href="#top">Till topp</a>
-			<a href="form.html">Till anmälan</a>
+			<a class="meny-botten__top--osynlig" href="#top">Till topp</a>
+			<a class="meny-botten__form" href="form.html">Till anmälan</a>
 		</nav>
 		
 	</main>
@@ -116,9 +116,9 @@
 		<div class="box-botten">
 			<h4>Bättre webb</h4>
 			<ul>
-				<li>Adress: <a class="kontakt" href="https://www.google.com/maps/place/V%C3%A5xn%C3%A4sgatan+10,+653+40+Karlstad/@59.3828423,13.489686,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3cfcd12346f:0x7f9717c8ea4a4ca8!8m2!3d59.3828423!4d13.489686"> Våxnäsgatan 10, 653 40 Karlstad</a></li>
-				<li> Tel: <a class="kontakt" href="Tel: 054-770 31 54"> 054-770 31 54</a></li>
-				<li>Email: <a class="kontakt" href="mailto:someone@yoursite.com"> Info@BattreWebb.com</a></li>
+				<li>Adress: <a class="box-botten__kontakt" href="https://www.google.com/maps/place/V%C3%A5xn%C3%A4sgatan+10,+653+40+Karlstad/@59.3828423,13.489686,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3cfcd12346f:0x7f9717c8ea4a4ca8!8m2!3d59.3828423!4d13.489686"> Våxnäsgatan 10, 653 40 Karlstad</a></li>
+				<li> Tel: <a class="box-botten__kontakt" href="Tel: 054-770 31 54"> 054-770 31 54</a></li>
+				<li>Email: <a class="box-botten__kontakt" href="mailto:someone@yoursite.com"> Info@BattreWebb.com</a></li>
 			</ul>
 		</div>
 	</footer>

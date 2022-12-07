@@ -2,7 +2,7 @@
 	color: #EAEAEA;
 }
 
-body > main > .bakgrund{
+body > main > .bakgrund--gradiant{
 	background-image: var(--linear-bakgrund);
 }
 
@@ -29,7 +29,7 @@ footer > .box-botten > h4{
 	font-size: min(max(16px, 3.5vw), 4vw);
 }
 
- .hero-picture > img{
+ .top__hero-picture > .top__talare{
 	width:100%;
 	max-height: 80vh;
 	margin-left: auto;
@@ -66,7 +66,7 @@ footer > .box-botten > h4{
 }
 
 /* datum i cards*/
-.semenarium > .box-innehall > p:first-child{
+.semenarium > .semenarium__box-innehall > p:first-child{
 	font-family: Gill Sans MT;
 	color: #D6D6D6;
 	font-size: 0.8em;
@@ -74,80 +74,80 @@ footer > .box-botten > h4{
 }
 
 /* dag 1, dag 2 */
-article.dag{
+article.semenarium__dag{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(7, auto);
 }
 
 /* dag 3 */
-article.dag-tre{
+article.semenarium__dag-tre{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(9, auto);
 }
 
 
-article.dag > *, 
-article.dag-tre > *{
+article.semenarium__dag > *, 
+article.semenarium__dag-tre > *{
 	padding-left:0.5em;
 	padding-right: 0.5em;
 	padding-top:0.5em;
 }
 
 /* border under föreläsare */
-article.dag > p:nth-of-type(3n +4),
-article.dag-tre > p:nth-of-type(3n +4){
+article.semenarium__dag > p:nth-of-type(3n +4),
+article.semenarium__dag-tre > p:nth-of-type(3n +4){
 	border-bottom: 1px solid #EAEAEA;
 	margin-bottom: 0.5em;	
 	padding-bottom: 0.5em;
 }
 
 /* styling för tider */
-article.dag > p:nth-of-type(3n +3),
-article.dag-tre > p:nth-of-type(3n +3){
+article.semenarium__dag > p:nth-of-type(3n +3),
+article.semenarium__dag-tre > p:nth-of-type(3n +3){
 	text-align: right;
 	padding-right: 0.5em;
 }
 
 /* style för rubriken dag */
-article.dag > p:first-child,
-article.dag-tre > p:first-child{
+article.semenarium__dag > p:first-child,
+article.semenarium__dag-tre > p:first-child{
 	grid-column: 1 / span 2;
 	font-size:1.3em;
 	padding-bottom: 1em;
 }
 
 /* namn på första föreläsare */
-article.dag > p:nth-child(4),
-article.dag-tre > p:nth-child(4){
+article.semenarium__dag > p:nth-child(4),
+article.semenarium__dag-tre > p:nth-child(4){
 	grid-column: 1 / span 2;
 	grid-row: 3;
 }
 
 /* namn på andra föreläsare */
-article.dag > p:nth-child(7),
-article.dag-tre > p:nth-child(7){
+article.semenarium__dag > p:nth-child(7),
+article.semenarium__dag-tre > p:nth-child(7){
 	grid-column: 1 / span 2;
 	grid-row: 5;
 }
 
 /* namn på tredje föreläsare */
-article.dag > p:nth-child(10),
-article.dag-tre > p:nth-child(10){
+article.semenarium__dag > p:nth-child(10),
+article.semenarium__dag-tre > p:nth-child(10){
 	grid-column: 1 / span 2;
 	grid-row: 7;
 }
 
 /* namn på fjärde föreläsaren dag 3 */
-article.dag-tre > p:nth-child(13){
+article.semenarium__dag-tre > p:nth-child(13){
 	grid-column: 1 / span 2;
 	grid-row:9;
 }
 
 /* läs mera länken i cards */
-article.dag > a,
-article.dag-tre > a{
+article.semenarium__dag > a,
+article.semenarium__dag-tre > a{
 	grid-column: 1 / span 2;
 	display: flex;
 	justify-content: center;
@@ -165,7 +165,8 @@ article.dag-tre > a{
 }
 
 /* styling länk top och anmälan */
-.meny-botten > a{
+.meny-botten > .meny-botten__top--osynlig,
+.meny-botten > .meny-botten__form{
 	display: flex;
 	align-items: center;
 	background-color: #030524;
@@ -182,7 +183,7 @@ article.dag-tre > a{
 }
 /* Länk till toppen försvinner */
 @media (min-width:1009px){
-	.meny-botten > a:first-child{
+	.meny-botten > .meny-botten__top--osynlig{
 		visibility: hidden;
 	}
 }
