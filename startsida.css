@@ -46,6 +46,10 @@ footer > .box-botten > h4{
 	font-family: var(--font-text);
 }
 
+.information > h3{
+	font-size: min(max(20px, 3vw), 10vw);
+}
+
 /* cards, tider om semenarium */
 .semenarium{
 	margin:1em;
