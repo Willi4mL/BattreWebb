@@ -8,6 +8,7 @@ h2 {
 	justify-content: center;
 	margin-top: 2em;
 	margin-bottom: 1.5em;
+	font-family: var(--font-text);
 }
 
 /* cards, tider om semenarium */
@@ -28,8 +29,7 @@ h2 {
 article.dag{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(3, auto);
-	
+	grid-template-rows: repeat(3, auto);	
 }
 
 article.dag > *{
@@ -38,6 +38,11 @@ article.dag > *{
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	border-bottom: 1px solid #EAEAEA;
+}
+
+.dag > ul li,
+article.dag > *{
+	font-family: var(--font-text);
 }
 
 article.dag > p:nth-child(2){
@@ -56,8 +61,7 @@ article.dag > ul{
 	padding-top: 1em;
 	padding-left: 1.5em;
 	border-bottom: none;
-	padding-bottom: 1em;
-	
+	padding-bottom: 1em;	
 }
 
 article.dag > ul li{
@@ -79,6 +83,7 @@ article.dag > ul li{
 	align-items: center;
 	padding: 1em;
 	font-size: clamp(1em, 5vw, 1.5em);
+	font-family: var(--font-text);
 }
 
 .dag-botten{
@@ -101,6 +106,7 @@ article.dag > ul li{
 	align-items: center;
 	padding: 1em;
 	font-size: clamp(1em, 5vw, 1.5em);
+	font-family: var(--font-text);
 }
 
 @media (min-width:1009px){
