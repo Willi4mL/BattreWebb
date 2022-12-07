@@ -81,7 +81,7 @@ main > .bakgrund > nav{
 
 .till-anmalan--knapp:before {
 	content: "";
-	background-color: white;
+	background-color: #ffffff;
 	top: 0;
 	left: 0;
 	width: 100%;
