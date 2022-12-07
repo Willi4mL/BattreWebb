@@ -96,7 +96,7 @@ main > .bakgrund > nav{
   }
 
   /* Osynligt card */
-  .semenarium .osynlig{
+  .semenarium .semenarium__box-innehall--osynlig{
 	visibility: hidden;
 }
 
@@ -161,7 +161,7 @@ footer > .box-botten > ul{
 	a{
 		text-decoration: none;
 	}
-	.osynlig{
+	.semenarium__box-innehall--osynlig{
 		display: none;
 	}
 }
