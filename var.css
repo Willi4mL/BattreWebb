@@ -46,7 +46,7 @@ a{
 }
 
 main a:hover,
-.kontakt:hover{
+.box-botten__kontakt:hover{
 	text-decoration: underline;
 }
 
