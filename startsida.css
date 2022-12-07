@@ -26,7 +26,7 @@ footer > .box-botten > h4{
 	color:#EAEAEA;
 	padding: 0.3em;
 	width: 40vw;
-	font-size: min(max(16px, 4vw), 4vw);
+	font-size: min(max(16px, 3.5vw), 4vw);
 }
 
  .hero-picture > img{
@@ -42,7 +42,7 @@ footer > .box-botten > h4{
 .information > *{
 	display: flex;
 	justify-content: center;
-	margin:1.5em 1em;
+	margin:1.5em;
 	font-family: var(--font-text);
 }
 
@@ -57,7 +57,8 @@ footer > .box-botten > h4{
 	background-image: var(--linear-farg);
 	width: 100%;
 	margin-top:2em;
-	box-shadow: var(--skugga-effekt)
+	box-shadow: var(--skugga-effekt);
+	font-family: var(--font-text);
 }
 
 /* datum i cards*/
@@ -165,6 +166,7 @@ article.dag-tre > a{
 	align-items: center;
 	background-color: #030524;
 	font-size: 1.5em;
+	font-family: var(--font-text)
 }
 
 /* Information om konferensen tar mindre bredd */

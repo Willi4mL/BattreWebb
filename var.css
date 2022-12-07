@@ -8,8 +8,8 @@
 	--linear-farg: linear-gradient(to bottom right, #020317, #171756, #030524);
 	--linear-bakgrund: linear-gradient(#0b1162, #265fa8, #364ba9, #020645);
 	--skugga-effekt: 0px 2px 5px 0.5px #0e2a5a8c;
-	--font-rubrik:Meiryo;
-	--font-text: Monaco;
+	--font-rubrik: georgia;
+	--font-text: Times, serif;
 }
 
 header{
@@ -60,6 +60,7 @@ main > .bakgrund > nav{
 	padding: 0.5em 1em;
 	position: sticky;
 	top: 0;
+	font-family: var(--font-text);
 }
 
 /* Knapp i nav till anmälan */
@@ -129,6 +130,7 @@ footer > .box-botten > ul{
 	padding-left: 1em;
 	line-height: 1.8em;
 	padding-top: 0.5em;
+	font-family: var(--font-text);
 }
 
 @media (min-width: 768px){
