@@ -150,11 +150,11 @@ input[type="checkbox"]:checked ~.mat__textarea--osynlig{
 }
 
 .person > div > input:invalid{
-	border-right:0.5em solid #ff0000;
+	border-right:0.3em solid #ff0000;
 }
 
 .person > div > input[name="input-person--krav"]:valid{
-	border-right:0.5em solid #008000;
+	border-right:0.3em solid #008000;
 }
 
 .person > div > input:focus{
